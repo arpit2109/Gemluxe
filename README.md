@@ -67,3 +67,8 @@ A high-assurance, luxury e-commerce platform built with Django 5 and React 18.
 
 ## Real-time Features
 - Connect to `ws://localhost:8000/ws/inventory/{product_id}/` to receive stock updates.
+
+
+## Django secret key
+
+Set DJANGO_SECRET_KEY in the environment before starting the backend. Generate a local key with python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())". The settings fallback is for local development only; configure your own key for deployments.
